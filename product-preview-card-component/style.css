@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Fraunces", serif;
+  background-color: hsl(30, 38%, 92%);
+  font-size: 14px;
+}
+
+/* font-family: 'Montserrat', sans-serif; */
+
+.main {
+  width: 100%;
+}
+
+.card {
+  min-width: 600px;
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+
+.left {
+  width: 50%;
+  background-image: url(/images/image-product-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  padding: 35px 40px;
+}
+
+.item-category{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 24px;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+.item-title{
+    font-weight: 500;   
+    margin-bottom: 24px;
+
+}
+
+.description{
+    font-family:'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    width: 105%;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+
+.prices{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 24px;
+}
+
+.prices-updated{
+    font-size: 35px;
+    margin-right: 24px;
+    color: hsl(158, 36%, 37%);
+}
+.prices-previous{
+    margin-top: 12px;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+button{
+    display: flex;
+    width: 100%;
+    padding: 17px 0;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    cursor: pointer;
+}
+.cart-text{
+    margin-left: 10px;
+}
+
+
+button:hover{
+    background-color:  rgb(9, 57, 57);
+}
+
+
+@media only screen and (min-width:641px) and (max-width:768px){
+.card{max-width: 600px;}
+}
+
+
+
+@media only screen and (max-width:640px){
+    .card{
+        min-width: auto;
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    .left{
+width: 100%;
+height:350px;
+background-image:url(/images/image-product-mobile.jpg) ;
+border-radius: 10px 10px 0 0;
+background-size: cover;
+    }
+
+    .right{
+        width: 100%;
+        row-gap: 12px;
+        padding: 25px;
+        border-radius:0 0 10px 10px ;
+    
+    }
+
+    h1{
+        font-size: 35px;
+        line-height: 1;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
