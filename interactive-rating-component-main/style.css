@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%, 0.1);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body {
+  font-size: 20px;
+  background-color: var(--Very-Dark-Blue);
+  font-family: "Overpass", sans-serif;
+}
+
+/* font-family: 'Fraunces', serif;
+
+font-family: 'Overpass', sans-serif; */
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.box {
+  width: 450px;
+  height: 375px;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  background-color: #19202a;
+  padding: 25px;
+  border-radius: 20px;
+  row-gap: 20px;
+}
+.card__image {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--Light-Grey);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card_title {
+  color: white;
+}
+
+.card_description {
+  font-family: "Overpass", sans-serif;
+  color: var(--Medium-Grey);
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.number_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 45px;
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--Light-Grey);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  font-size: 15px;
+}
+
+.circle:hover {
+  background-color: var(--Medium-Grey);
+}
+
+.selected {
+  background-color: var(--Orange);
+}
+
+.btn {
+  height: 3rem;
+  width: 100%;
+  border-radius: 2rem;
+  background-color: #fb7413;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: #fff;
+  font-family: "Overpass", sans-serif;
+}
+
+.btn:hover{
+    color: orange;
+    background-color:var(--White) ;
+}
+
+.hide{
+    display: none;
+}
+
+.result_box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
+.result_para{
+    color: #fb7413;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0.5rem 0.3rem;
+    border-radius: 2rem;
+    background-color: #252d37;
+    width: 200px;
+    margin: 0 auto;
+    font-family: "Overpass", sans-serif;
+}
+
+.result_img{
+    margin-top: 15px;
+}
+
